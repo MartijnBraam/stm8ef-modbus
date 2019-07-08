@@ -79,6 +79,7 @@ NVM
     mbp1 1- ( #b) DUP 0 8 WITHIN IF
       mbp2 $FF00 =
       ( #b f ) coils B>L
+      $1 !OUT
       ( #b f a ) ROT ( f a #b ) B!
       MBSWR   \ single write response
     ELSE
