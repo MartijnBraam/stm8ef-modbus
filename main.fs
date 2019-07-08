@@ -1,12 +1,12 @@
 #require MBSERVER
 
-  2 CONSTANT BAUD9600
+  5 CONSTANT BAUD115200
 
 NVM
   \ --- MODBUS server startup
 
   : init ( -- )
-    BAUD9600 UARTISR
+    BAUD115200 UARTISR
     1 mbnode !
     MBSERVER
   ;
